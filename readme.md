@@ -18,3 +18,7 @@ About MD5 encryption and decrypt.
 easy
 --------------
 Some common operation in C++.
+
+FileType
+-----------------------------------
+You can define a set of rules used to ead the file through this module. That is to say, it allows you to define your own file types.
