@@ -12,7 +12,6 @@ public:
     static int StrToInt(string str);
     static string IntToStr(int i);
     static vector<string> Split(string o_str,string fenge);
-    static string replace
 };
 
 
