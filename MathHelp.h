@@ -22,7 +22,7 @@ public:
     static double Distance(cordine a, cordine b);//求两点之间距离
     static double RandF();//取双精度随机数
     static bool NearlyOnline(cordine point,cordine l1, cordine l2);//确认三点共线
-    cordine LimitOos(cordine);//求坐标极限
+    cordine LimitPos(cordine);//求坐标极限
     cordine MakeNoiseOf(cordine);//坐标噪化
 };
 

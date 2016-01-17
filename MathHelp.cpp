@@ -27,8 +27,8 @@ cordine MathHelp::MakeNoiseOf(cordine accuratetarget)
     srand((unsigned)time(NULL));
     int x = accuratetarget.first;
     int y = accuratetarget.second;
-    double randr = AINOISERADIUS*randf();
-    double theta = randf() * 2 * XC_PI;
+    double randr = AINOISERADIUS*RandF();
+    double theta = RandF() * 2 * XC_PI;
     int tx =(int)( x + randr*cos(theta));
     int ty =(int) (y + randr*sin(theta));
     return cordine(tx, ty);
@@ -36,8 +36,8 @@ cordine MathHelp::MakeNoiseOf(cordine accuratetarget)
 
 bool MathHelp::NearlyOnline(cordine point, cordine l1, cordine l2)
 {
-    double d1 = distance(point, l1);
-    double d2 = distance(point, l2);
-    double d3 = distance(l1, l2);
+    double d1 = Distance(point, l1);
+    double d2 = Distance(point, l2);
+    double d3 = Distance(l1, l2);
     return (d1 + d2 + ERRORCOMPENSATION - d3) <= ACCEPETABLEOFFSET;
 }

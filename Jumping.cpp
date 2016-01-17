@@ -30,7 +30,7 @@ float Jumping::MaxX()//使用时请严格注意！！这个函数不保留现场
 float Jumping::MaxY()//使用时请严格注意！！这个函数不保留现场
 {return (JumpV*JumpV)/(2*g);}
 
-void Jumping::ChangeJumpV(float JumpV)
+void Jumping::ChangeJumpV(float JumpV,int t)
 {
     this->JumpV=JumpV;
     this->dt=t;//保留时间
@@ -42,7 +42,7 @@ void Jumping::ChangeMoveV(float MoveV,int t)
 {
     this->MoveV=MoveV;
     this->dt=t;//保留时间
-    this->dx=Getx(t);//通过已经经过的时间保留之前已经经过的水平位移
+    this->dx=GetX(t);//通过已经经过的时间保留之前已经经过的水平位移
     Update();
 }
 

@@ -1,6 +1,7 @@
 #include "easy.h"
 
-void easy::deleteAt(vector<string>&vec,int n)
+template<typename T>
+void easy::deleteAt(vector<T>&vec,int n)
 {
     vector<string>::iterator it = vec.begin()+n;
     vec.erase(it);
